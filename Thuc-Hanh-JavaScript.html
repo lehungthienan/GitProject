@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nhap Diem 3 Môn, Toán, Lý,Văn, Tính Điểm Trung Bình-->
+<h2 id="dbt"></h2>
+<script>
+
+    let diemToan = prompt('Nhap diem mon Toan')*1;
+    let diemVan = parseFloat(prompt('Nhap diem mon Van'));
+    let diemAnh = prompt('Nhap diem mon Anh')*1;
+    document.getElementById('dbt').innerText = (diemToan + diemAnh + diemVan)/3
+
+</script>
+</body>
+</html>
