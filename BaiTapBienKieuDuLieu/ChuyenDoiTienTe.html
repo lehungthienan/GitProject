@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  Nhap So Tien <input type="number" id="Input">
+</div>
+<div>
+    From Currency
+    <select id="From">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+</div>
+<div>
+    To Currency
+    <select id="To">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+</div>
+<button onclick="Change()">ChuyenDoi</button>
+<p id="Output"></p>
+</body>
+<script>
+    function Change() {
+        let From = document.getElementById('From').value;
+        let To = document.getElementById('To').value;
+        let SoTien = document.getElementById('Input').value;
+        let Result;
+
+        if (From == "USD" && To == "VND"){
+       Result = SoTien * 23000;
+            document.getElementById('Output').innerText = Result;
+            }
+        else if (From == "VND" && To == "USD"){
+            Result = SoTien / 23000;
+            document.getElementById('Output').innerText = Result;
+        }
+        else if (From == "VND" && To == "VND"){
+            Result = document.getElementById('Input').value;
+            document.getElementById('Output').innerText = Result;
+        }
+        else if (From == "USD" && To == "USD"){
+            Result = document.getElementById('Input').value;
+            document.getElementById('Output').innerText = Result;
+        }
+        else {
+            document.getElementById('Output').innerText = 'ko tinh dc nhap lai ';
+        }
+    }
+</script>
+</html>

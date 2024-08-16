@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" placeholder="Nhap So" id="Input1">
+<input type="number" placeholder="Nhap So" id="Input2">
+<br>
+<button onclick="Cong()">Cong</button>
+<br>
+<button onclick="Tru()">Tru</button>
+<br>
+<button onclick="Nhan()">Nhan</button>
+<br>
+<button onclick="Chia()">Chia</button>
+<p id="Output"></p>
+</body>
+<script>
+    function Cong() {
+        let InputL = document.getElementById('Input1').value *1;
+        let InputR = document.getElementById('Input2').value *1;
+        let Ketqua = InputL + InputR;
+        document.getElementById('Output').innerText = Ketqua;
+    }
+    function Tru() {
+        let InputL = document.getElementById('Input1').value *1;
+        let InputR = document.getElementById('Input2').value *1;
+        let Ketqua = InputL - InputR;
+        document.getElementById('Output').innerText = Ketqua;
+    }
+    function Nhan() {
+        let InputL = document.getElementById('Input1').value *1;
+        let InputR = document.getElementById('Input2').value *1;
+        let Ketqua = InputL * InputR;
+        document.getElementById('Output').innerText = Ketqua;
+    }
+    function Chia() {
+        let InputL = document.getElementById('Input1').value *1;
+        let InputR = document.getElementById('Input2').value *1;
+        let Ketqua = InputL / InputR;
+        document.getElementById('Output').innerText = Ketqua;
+    }
+</script>
+</html>
