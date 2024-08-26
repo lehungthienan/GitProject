@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let month = +prompt('Tháng: ')
+    let year = +prompt('Số Năm: ')
+
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+            alert('29 Days in This Month')
+        }
+        else {
+            alert('28 Days in This Month')
+        }
+    if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12 ){
+        alert('31 Days in This Month')
+    }
+    else {
+        alert('30 Days in This Month')
+    }
+    // alert(`Thang &{month} co 31 ngay`)
+</script>
+</html>

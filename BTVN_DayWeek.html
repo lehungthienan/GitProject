@@ -8,33 +8,12 @@
 
 </body>
 <script>
-    // Nhap so Ngay Can Kiem Tra
- let so = prompt('Nhap So Ngay');
- so = Number(so);
-// Tao Dieu Kien So Sanh IF
-        if (so === 1) {
-            alert('Sunday')
-        }
-        else if (so === 2){
-            alert('Monday')
-        }
-        else if (so === 3){
-            alert('Tuesday')
-        }
-        else if (so === 4){
-            alert('Wednesday')
-        }
-        else if (so === 5){
-            alert('Thursday')
-        }
-        else if (so === 6){
-            alert('Friday')
-        }
-        else if (so === 7){
-            alert('Saturday')
-        }
-        else {
-            alert('Không phải ngày trong tuần')
-        }
+    prompt(day)
+    let daysOfWeek = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+    let dayIndex = currentDate.getDay();
+    if (dayIndex === 1){
+        alert('CN')
+    }
+
 </script>
 </html>
